@@ -2,6 +2,7 @@ body{
     background-color: #121212;
     padding: 0;
     margin: 0;
+    user-select: none;
 }
 #fullscreen{
     width: 50px;
@@ -9,6 +10,10 @@ body{
     float: right;
     padding: 0;
     margin: 0;
+    cursor: pointer;
+}
+#fullscreen:active{
+    filter: invert(100%);
 }
 #jacksmith{
     width: 100%;

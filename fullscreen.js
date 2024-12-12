@@ -1,4 +1,4 @@
-function openFullscreen() {
+function fullscreen() {
     var elem = document.getElementById(`jacksmith`);
     if (elem.requestFullscreen) {
       elem.requestFullscreen();
