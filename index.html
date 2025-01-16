@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
   <head>
-    <title>jacksmith</title>
+    <title>Jacksmith | Sunori</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" href="jacksmith.png" type="image/png">
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="/jacksmith.png" type="image/png">
     <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-    <script src="./fullscreen.js"></script>
+    <style>
+      body{
+        margin: 0;
+        overflow: hidden;
+      }
+      #display{
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
   </head>
   <body>
-    <embed id="jacksmith" src="./jacksmith.swf">
-    <img id="fullscreen" src="./fullscreen.png" onclick="fullscreen()">
+    <embed id="display" src="/jacksmith.swf">
   </body>
 </html>
