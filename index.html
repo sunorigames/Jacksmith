@@ -20,13 +20,11 @@
   <body>
     <embed id="display" src="/jacksmith.swf">
     <script>
-      window.onbeforeunload = function(event) {
-        if (confirm("Are you sure you want to leave this page?")) {
-          
-        } 
-        else {
-          event.returnValue = " "
-        }
+      window.onbeforeunload, closConfirm();
+
+      function closeConfirm() {
+        event.preventDefault();
+        return "";
       };
     </script>
   </body>
