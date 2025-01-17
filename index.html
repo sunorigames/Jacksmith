@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" onbeforeunload="closeConfirm()">
   <head>
     <title>Jacksmith | Sunori</title>
     <meta charset="UTF-8" />
@@ -20,8 +20,6 @@
   <body>
     <embed id="display" src="/jacksmith.swf">
     <script>
-      window.onbeforeunload, closConfirm();
-
       function closeConfirm() {
         event.preventDefault();
         return "";
